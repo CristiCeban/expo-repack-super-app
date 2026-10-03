@@ -28,17 +28,7 @@ export default (env) => {
     mode,
     name: platform,
     module: {
-      rules: [
-        {
-          // ExpoPlugin keeps ES modules for Babel, so Rspack applies Node's
-          // fully-specified ESM resolution to `"type": "module"` packages.
-          // React Native libraries (e.g. React Navigation) use extensionless
-          // imports that rely on platform extensions.
-          test: /\.m?js$/,
-          resolve: { fullySpecified: false },
-        },
-        ...Repack.getAssetTransformRules({ inline: true }),
-      ],
+      rules: Repack.getAssetTransformRules({ inline: true }),
     },
     output: {
       clean: true,

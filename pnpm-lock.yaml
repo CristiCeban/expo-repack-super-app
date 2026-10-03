@@ -928,7 +928,7 @@ packages:
     engines: {node: '>=18'}
 
   '@callstack/repack-expo@file:tarballs/callstack-repack-expo-0.0.0.tgz':
-    resolution: {integrity: sha512-+3l6H5dWSjkH0F30GNM5vazO9WTVZM3KKqWTOYFcQjQ1oPfq1Z7nWo3XnYVv8GXfLLunPtIBytE+Zs0dIr2Thg==, tarball: file:tarballs/callstack-repack-expo-0.0.0.tgz}
+    resolution: {integrity: sha512-BhcraEAtS0ed4SLfy5Hk2o247V8yUkC0UDAe8Zr/LPBFi/bBLxQUs8FLITrQ19kxuxZYVCxoIVHsyVcNHN7v7g==, tarball: file:tarballs/callstack-repack-expo-0.0.0.tgz}
     version: 0.0.0
     engines: {node: '>=20.19'}
     hasBin: true

@@ -27,18 +27,6 @@ export default (env) => {
     devServer,
     mode,
     name: platform,
-    module: {
-      rules: [
-        {
-          // ExpoPlugin keeps ES modules for Babel, so Rspack applies Node's
-          // fully-specified ESM resolution to `"type": "module"` packages.
-          // React Native libraries (e.g. React Navigation) use extensionless
-          // imports that rely on platform extensions.
-          test: /\.m?js$/,
-          resolve: { fullySpecified: false },
-        },
-      ],
-    },
     output: {
       clean: true,
       path: path.join(projectRoot, 'build', 'rspack', platform),

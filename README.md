@@ -24,6 +24,10 @@ SDK 57) and set up with `repack-expo init`, then `expo prebuild`. The mini
 apps are Expo projects built with `ExpoPlugin` + `ModuleFederationPluginV2`;
 they have no native projects and are loaded by the host at runtime.
 
+## Requirements
+
+Node.js 20.19+, pnpm 10, Xcode (iOS) and/or Android Studio (Android).
+
 ## Run
 
 ```sh
@@ -39,11 +43,19 @@ On Android, forward the mini app ports to the emulator:
 for p in 8081 9001 9002 9003; do adb reverse tcp:$p tcp:$p; done
 ```
 
-To test newer commits from the Re.Pack PR branch:
+### Testing other Re.Pack commits
+
+The tarballs are committed so the app works after a plain clone. To test a
+different commit of the PR, check out
+[callstack/repack](https://github.com/callstack/repack) (branch
+`feat/expo-repack-support` of `whydidoo/repack`) and repack:
 
 ```sh
-scripts/pack-repack.sh ~/Developer/callstack/repack
+scripts/pack-repack.sh ../repack
 ```
+
+Restart the dev servers afterwards, and rerun `npx expo prebuild` if the
+config plugin changed.
 
 ## Differences from super-app-showcase
 
@@ -63,9 +75,14 @@ scripts/pack-repack.sh ~/Developer/callstack/repack
 - Not ported: React Compiler, code signing of the auth remote, Jest tests,
   rnx-kit align-deps.
 
-## Workaround for an issue found in the integration
+## Integration issues found with this app
 
-Each `rspack.config.mjs` adds a `{ test: /\.m?js$/, resolve: { fullySpecified: false } }`
-rule. `ExpoPlugin` keeps ES modules for Babel, so Rspack enforces
-fully-specified ESM imports in `"type": "module"` packages, and React
-Navigation / AsyncStorage fail to resolve their extensionless imports.
+Building this app surfaced two bugs in `@callstack/repack-expo`, both fixed on
+the PR branch and included in the tarballs:
+
+- Every module failed with "Failed to import 'hermes-parser'" because Re.Pack
+  looked for hermes-parser through `@react-native/babel-preset`, which Expo
+  apps don't install.
+- React Navigation and AsyncStorage failed with "Module not found" for their
+  extensionless imports, because `ExpoPlugin` keeps ES modules and Rspack
+  enforced fully-specified ESM resolution in `"type": "module"` packages.

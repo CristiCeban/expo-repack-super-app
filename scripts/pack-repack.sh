@@ -1,9 +1,9 @@
 #!/bin/sh
 # Rebuild and pack Re.Pack + the Expo integration from a local checkout of
 # callstack/repack into ./tarballs, then reinstall.
-# Usage: scripts/pack-repack.sh [path-to-repack-checkout]
+# Usage: scripts/pack-repack.sh <path-to-repack-checkout>
 set -eu
-REPACK_DIR="${1:-$HOME/Developer/callstack/repack}"
+REPACK_DIR="${1:?Usage: scripts/pack-repack.sh <path-to-repack-checkout>}"
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 
 cd "$REPACK_DIR"
