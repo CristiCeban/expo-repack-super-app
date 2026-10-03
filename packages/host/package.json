@@ -35,7 +35,6 @@
     "@callstack/repack-expo": "catalog:",
     "@callstack/repack-plugin-reanimated": "catalog:",
     "@react-native-community/cli": "catalog:",
-    "@react-native/babel-preset": "catalog:",
     "@rspack/core": "catalog:",
     "@types/react": "catalog:",
     "babel-preset-expo": "catalog:",

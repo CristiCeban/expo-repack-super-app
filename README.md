@@ -51,7 +51,7 @@ scripts/pack-repack.sh ~/Developer/callstack/repack
   at versions that support it. Versions live in the `catalog` in
   `pnpm-workspace.yaml`. Libraries also used by the Re.Pack tester apps use
   the same versions validated there.
-- Rspack instead of webpack (`repack-expo` is Rspack-only).
+- Rspack 2 instead of webpack (`repack-expo` is Rspack-only).
 - `expo-splash-screen` instead of `react-native-bootsplash`.
 - `@expo/vector-icons` instead of `@react-native-vector-icons/*`, so the
   react-native-paper icon patch is no longer needed. Android tab icons are
@@ -63,15 +63,9 @@ scripts/pack-repack.sh ~/Developer/callstack/repack
 - Not ported: React Compiler, code signing of the auth remote, Jest tests,
   rnx-kit align-deps.
 
-## Workarounds for issues found in the integration
+## Workaround for an issue found in the integration
 
-- `@react-native/babel-preset` is a devDependency of every package. Re.Pack's
-  Babel loader locates `hermes-parser` through it; without it every module
-  fails with "Failed to import 'hermes-parser'". `repack-expo init` does not
-  add it.
-- Each `rspack.config.mjs` adds a `{ test: /\.m?js$/, resolve: { fullySpecified: false } }`
-  rule. `ExpoPlugin` keeps ES modules for Babel, so Rspack enforces
-  fully-specified ESM imports in `"type": "module"` packages, and React
-  Navigation / AsyncStorage fail to resolve their extensionless imports.
-- `@rspack/core` is pinned to 1.6.0. `repack-expo init` writes `>=1`, which
-  installs Rspack 2.
+Each `rspack.config.mjs` adds a `{ test: /\.m?js$/, resolve: { fullySpecified: false } }`
+rule. `ExpoPlugin` keeps ES modules for Babel, so Rspack enforces
+fully-specified ESM imports in `"type": "module"` packages, and React
+Navigation / AsyncStorage fail to resolve their extensionless imports.

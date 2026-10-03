@@ -27,9 +27,6 @@ catalogs:
     '@react-native-community/cli':
       specifier: 20.2.0
       version: 20.2.0
-    '@react-native/babel-preset':
-      specifier: 0.86.3
-      version: 0.86.3
     '@react-navigation/native':
       specifier: 7.5.0
       version: 7.5.0
@@ -37,8 +34,8 @@ catalogs:
       specifier: 7.20.0
       version: 7.20.0
     '@rspack/core':
-      specifier: 1.6.0
-      version: 1.6.0
+      specifier: 2.2.8
+      version: 2.2.8
     '@shopify/react-native-skia':
       specifier: 2.6.2
       version: 2.6.2
@@ -132,7 +129,7 @@ importers:
         version: 5.2.14(@types/react@19.2.18)(react-native-gesture-handler@2.32.0(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8))(react-native-reanimated@4.5.3(react-native-worklets@0.11.3(@babel/core@7.29.7)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8)
       '@module-federation/enhanced':
         specifier: 'catalog:'
-        version: 2.8.0(@rspack/core@1.6.0)(typescript@6.0.3)
+        version: 2.8.0(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(typescript@6.0.3)
       '@react-native-async-storage/async-storage':
         specifier: 'catalog:'
         version: 3.1.1(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8)
@@ -193,22 +190,19 @@ importers:
     devDependencies:
       '@callstack/repack':
         specifier: file:../../tarballs/callstack-repack-5.4.0.tgz
-        version: file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@1.6.0)(typescript@6.0.3))(@rspack/core@1.6.0)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))
+        version: file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(typescript@6.0.3))(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))
       '@callstack/repack-expo':
         specifier: file:../../tarballs/callstack-repack-expo-0.0.0.tgz
-        version: file:tarballs/callstack-repack-expo-0.0.0.tgz(@callstack/repack@file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@1.6.0)(typescript@6.0.3))(@rspack/core@1.6.0)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8)))(@rspack/core@1.6.0)(expo@57.0.26(@babel/core@7.29.7)(react-native-worklets@0.11.3(@babel/core@7.29.7)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8)(typescript@6.0.3))
+        version: file:tarballs/callstack-repack-expo-0.0.0.tgz(@callstack/repack@file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(typescript@6.0.3))(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8)))(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(expo@57.0.26(@babel/core@7.29.7)(react-native-worklets@0.11.3(@babel/core@7.29.7)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8)(typescript@6.0.3))
       '@callstack/repack-plugin-reanimated':
         specifier: file:../../tarballs/callstack-repack-plugin-reanimated-5.4.0.tgz
-        version: file:tarballs/callstack-repack-plugin-reanimated-5.4.0.tgz(@babel/core@7.29.7)(@callstack/repack@file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@1.6.0)(typescript@6.0.3))(@rspack/core@1.6.0)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8)))
+        version: file:tarballs/callstack-repack-plugin-reanimated-5.4.0.tgz(@babel/core@7.29.7)(@callstack/repack@file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(typescript@6.0.3))(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8)))
       '@react-native-community/cli':
         specifier: 'catalog:'
         version: 20.2.0(typescript@6.0.3)
-      '@react-native/babel-preset':
-        specifier: 'catalog:'
-        version: 0.86.3
       '@rspack/core':
         specifier: 'catalog:'
-        version: 1.6.0
+        version: 2.2.8(@module-federation/runtime-tools@2.8.0)
       '@types/react':
         specifier: 'catalog:'
         version: 19.2.18
@@ -232,7 +226,7 @@ importers:
         version: 5.2.14(@types/react@19.2.18)(react-native-gesture-handler@2.32.0(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8))(react-native-reanimated@4.5.3(react-native-worklets@0.11.3(@babel/core@7.29.7)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8)
       '@module-federation/enhanced':
         specifier: 'catalog:'
-        version: 2.8.0(@rspack/core@1.6.0)(typescript@6.0.3)
+        version: 2.8.0(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(typescript@6.0.3)
       '@react-native-async-storage/async-storage':
         specifier: 'catalog:'
         version: 3.1.1(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8)
@@ -302,22 +296,19 @@ importers:
     devDependencies:
       '@callstack/repack':
         specifier: file:../../tarballs/callstack-repack-5.4.0.tgz
-        version: file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@1.6.0)(typescript@6.0.3))(@rspack/core@1.6.0)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))
+        version: file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(typescript@6.0.3))(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))
       '@callstack/repack-expo':
         specifier: file:../../tarballs/callstack-repack-expo-0.0.0.tgz
-        version: file:tarballs/callstack-repack-expo-0.0.0.tgz(@callstack/repack@file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@1.6.0)(typescript@6.0.3))(@rspack/core@1.6.0)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8)))(@rspack/core@1.6.0)(expo@57.0.26(@babel/core@7.29.7)(react-native-worklets@0.11.3(@babel/core@7.29.7)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8)(typescript@6.0.3))
+        version: file:tarballs/callstack-repack-expo-0.0.0.tgz(@callstack/repack@file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(typescript@6.0.3))(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8)))(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(expo@57.0.26(@babel/core@7.29.7)(react-native-worklets@0.11.3(@babel/core@7.29.7)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8)(typescript@6.0.3))
       '@callstack/repack-plugin-reanimated':
         specifier: file:../../tarballs/callstack-repack-plugin-reanimated-5.4.0.tgz
-        version: file:tarballs/callstack-repack-plugin-reanimated-5.4.0.tgz(@babel/core@7.29.7)(@callstack/repack@file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@1.6.0)(typescript@6.0.3))(@rspack/core@1.6.0)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8)))
+        version: file:tarballs/callstack-repack-plugin-reanimated-5.4.0.tgz(@babel/core@7.29.7)(@callstack/repack@file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(typescript@6.0.3))(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8)))
       '@react-native-community/cli':
         specifier: 'catalog:'
         version: 20.2.0(typescript@6.0.3)
-      '@react-native/babel-preset':
-        specifier: 'catalog:'
-        version: 0.86.3
       '@rspack/core':
         specifier: 'catalog:'
-        version: 1.6.0
+        version: 2.2.8(@module-federation/runtime-tools@2.8.0)
       '@types/react':
         specifier: 'catalog:'
         version: 19.2.18
@@ -365,7 +356,7 @@ importers:
         version: 3.4.0(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8)
       '@module-federation/enhanced':
         specifier: 'catalog:'
-        version: 2.8.0(@rspack/core@1.6.0)(typescript@6.0.3)
+        version: 2.8.0(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(typescript@6.0.3)
       '@react-native-async-storage/async-storage':
         specifier: 'catalog:'
         version: 3.1.1(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8)
@@ -426,22 +417,19 @@ importers:
     devDependencies:
       '@callstack/repack':
         specifier: file:../../tarballs/callstack-repack-5.4.0.tgz
-        version: file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@1.6.0)(typescript@6.0.3))(@rspack/core@1.6.0)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))
+        version: file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(typescript@6.0.3))(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))
       '@callstack/repack-expo':
         specifier: file:../../tarballs/callstack-repack-expo-0.0.0.tgz
-        version: file:tarballs/callstack-repack-expo-0.0.0.tgz(@callstack/repack@file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@1.6.0)(typescript@6.0.3))(@rspack/core@1.6.0)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8)))(@rspack/core@1.6.0)(expo@57.0.26(@babel/core@7.29.7)(react-native-worklets@0.11.3(@babel/core@7.29.7)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8)(typescript@6.0.3))
+        version: file:tarballs/callstack-repack-expo-0.0.0.tgz(@callstack/repack@file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(typescript@6.0.3))(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8)))(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(expo@57.0.26(@babel/core@7.29.7)(react-native-worklets@0.11.3(@babel/core@7.29.7)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8)(typescript@6.0.3))
       '@callstack/repack-plugin-reanimated':
         specifier: file:../../tarballs/callstack-repack-plugin-reanimated-5.4.0.tgz
-        version: file:tarballs/callstack-repack-plugin-reanimated-5.4.0.tgz(@babel/core@7.29.7)(@callstack/repack@file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@1.6.0)(typescript@6.0.3))(@rspack/core@1.6.0)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8)))
+        version: file:tarballs/callstack-repack-plugin-reanimated-5.4.0.tgz(@babel/core@7.29.7)(@callstack/repack@file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(typescript@6.0.3))(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8)))
       '@react-native-community/cli':
         specifier: 'catalog:'
         version: 20.2.0(typescript@6.0.3)
-      '@react-native/babel-preset':
-        specifier: 'catalog:'
-        version: 0.86.3
       '@rspack/core':
         specifier: 'catalog:'
-        version: 1.6.0
+        version: 2.2.8(@module-federation/runtime-tools@2.8.0)
       '@types/react':
         specifier: 'catalog:'
         version: 19.2.18
@@ -468,7 +456,7 @@ importers:
         version: 3.4.0(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8)
       '@module-federation/enhanced':
         specifier: 'catalog:'
-        version: 2.8.0(@rspack/core@1.6.0)(typescript@6.0.3)
+        version: 2.8.0(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(typescript@6.0.3)
       '@react-native-async-storage/async-storage':
         specifier: 'catalog:'
         version: 3.1.1(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8)
@@ -529,22 +517,19 @@ importers:
     devDependencies:
       '@callstack/repack':
         specifier: file:../../tarballs/callstack-repack-5.4.0.tgz
-        version: file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@1.6.0)(typescript@6.0.3))(@rspack/core@1.6.0)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))
+        version: file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(typescript@6.0.3))(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))
       '@callstack/repack-expo':
         specifier: file:../../tarballs/callstack-repack-expo-0.0.0.tgz
-        version: file:tarballs/callstack-repack-expo-0.0.0.tgz(@callstack/repack@file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@1.6.0)(typescript@6.0.3))(@rspack/core@1.6.0)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8)))(@rspack/core@1.6.0)(expo@57.0.26(@babel/core@7.29.7)(react-native-worklets@0.11.3(@babel/core@7.29.7)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8)(typescript@6.0.3))
+        version: file:tarballs/callstack-repack-expo-0.0.0.tgz(@callstack/repack@file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(typescript@6.0.3))(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8)))(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(expo@57.0.26(@babel/core@7.29.7)(react-native-worklets@0.11.3(@babel/core@7.29.7)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8)(typescript@6.0.3))
       '@callstack/repack-plugin-reanimated':
         specifier: file:../../tarballs/callstack-repack-plugin-reanimated-5.4.0.tgz
-        version: file:tarballs/callstack-repack-plugin-reanimated-5.4.0.tgz(@babel/core@7.29.7)(@callstack/repack@file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@1.6.0)(typescript@6.0.3))(@rspack/core@1.6.0)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8)))
+        version: file:tarballs/callstack-repack-plugin-reanimated-5.4.0.tgz(@babel/core@7.29.7)(@callstack/repack@file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(typescript@6.0.3))(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8)))
       '@react-native-community/cli':
         specifier: 'catalog:'
         version: 20.2.0(typescript@6.0.3)
-      '@react-native/babel-preset':
-        specifier: 'catalog:'
-        version: 0.86.3
       '@rspack/core':
         specifier: 'catalog:'
-        version: 1.6.0
+        version: 2.2.8(@module-federation/runtime-tools@2.8.0)
       '@types/react':
         specifier: 'catalog:'
         version: 19.2.18
@@ -860,18 +845,6 @@ packages:
     peerDependencies:
       '@babel/core': ^7.0.0-0
 
-  '@babel/plugin-transform-react-jsx-self@7.29.7':
-    resolution: {integrity: sha512-TL0hMc9xzy86VD31nUiwzd5otRAcyEPcsegCxolO0PvcXuH1v0kECe/UIznYFihpkvU5wg/jk4v0TTEFfm53fw==}
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-
-  '@babel/plugin-transform-react-jsx-source@7.29.7':
-    resolution: {integrity: sha512-06IyK09H3wi4cGbhDBwp5gUGo0IKtnYa8tyTiephirPCK6fbobVGiXMMI5zLQ4aKEYP3wZ3ArU44o+8KMrSG/Q==}
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-
   '@babel/plugin-transform-react-jsx@7.29.7':
     resolution: {integrity: sha512-WsZulLVBUHXVj2cUcPVx6UE21TpalB6bHbSFErKT0Ib++ax24jjXe73FqlWvdylFOjiuPHYi6VCcgRad1ItN+A==}
     engines: {node: '>=6.9.0'}
@@ -880,12 +853,6 @@ packages:
 
   '@babel/plugin-transform-react-pure-annotations@7.29.7':
     resolution: {integrity: sha512-H5E+HBgDpr6Q5t+Aj11tL7XkIui1jhbIoArVQnqjgXo5/3YxkN7ZEBcWF4RQlB0T4rrxJQbXS6kiFV6B7XTqUA==}
-    engines: {node: '>=6.9.0'}
-    peerDependencies:
-      '@babel/core': ^7.0.0-0
-
-  '@babel/plugin-transform-regenerator@7.29.8':
-    resolution: {integrity: sha512-0UpIXPtdDtMXfnV2OJAVMLpj3H/92vmkA6lpSRakmycJvj3VUy6Xs1dM8tXRugupykr5WB+LpiVl0J8LMVg2mg==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -961,7 +928,7 @@ packages:
     engines: {node: '>=18'}
 
   '@callstack/repack-expo@file:tarballs/callstack-repack-expo-0.0.0.tgz':
-    resolution: {integrity: sha512-nzY8noYGn27ArhDPhiCR8l6+XIMVcWGDrL1n+3sMOap06nERmaekMQG5xN7Zq6Dl5YPFWIJSB9Amm7YndcVUXQ==, tarball: file:tarballs/callstack-repack-expo-0.0.0.tgz}
+    resolution: {integrity: sha512-+3l6H5dWSjkH0F30GNM5vazO9WTVZM3KKqWTOYFcQjQ1oPfq1Z7nWo3XnYVv8GXfLLunPtIBytE+Zs0dIr2Thg==, tarball: file:tarballs/callstack-repack-expo-0.0.0.tgz}
     version: 0.0.0
     engines: {node: '>=20.19'}
     hasBin: true
@@ -1443,9 +1410,6 @@ packages:
       webpack:
         optional: true
 
-  '@module-federation/error-codes@0.21.2':
-    resolution: {integrity: sha512-mGbPAAApgjmQUl4J7WAt20aV04a26TyS21GDEpOGXFEQG5FqmZnSJ6FqB8K19HgTKioBT1+fF/Ctl5bGGao/EA==}
-
   '@module-federation/error-codes@2.8.0':
     resolution: {integrity: sha512-Gaog9904EmxYOQV0hli3XQ7jXeFaADfh5bnBtTCtbZ37Qd/Sz9kQfd+gYQRyIj7RGmkv9DPiN/SsmrTMrTymKw==}
 
@@ -1472,26 +1436,14 @@ packages:
       vue-tsc:
         optional: true
 
-  '@module-federation/runtime-core@0.21.2':
-    resolution: {integrity: sha512-LtDnccPxjR8Xqa3daRYr1cH/6vUzK3mQSzgvnfsUm1fXte5syX4ftWw3Eu55VdqNY3yREFRn77AXdu9PfPEZRw==}
-
   '@module-federation/runtime-core@2.8.0':
     resolution: {integrity: sha512-Tf98+epGGiPSHqmQHuXa2uXZMMvjGf1IqJDR1/FpXfmobv5ECN0mGZCjUHGNSyxvoDyXKIkKwJu7IwEoh0ouQA==}
-
-  '@module-federation/runtime-tools@0.21.2':
-    resolution: {integrity: sha512-SgG9NWTYGNYcHSd5MepO3AXf6DNXriIo4sKKM4mu4RqfYhHyP+yNjnF/gvYJl52VD61g0nADmzLWzBqxOqk2tg==}
 
   '@module-federation/runtime-tools@2.8.0':
     resolution: {integrity: sha512-3yOqjdSHXxX4HA3GhlXg3hghGAXW2RJUsnwXCcik2/lTxOHizKI8f3RM+GGCKPxDVqtw43IShe3tA12jNL5A/A==}
 
-  '@module-federation/runtime@0.21.2':
-    resolution: {integrity: sha512-97jlOx4RAnAHMBTfgU5FBK6+V/pfT6GNX0YjSf8G+uJ3lFy74Y6kg/BevEkChTGw5waCLAkw/pw4LmntYcNN7g==}
-
   '@module-federation/runtime@2.8.0':
     resolution: {integrity: sha512-cGtUBQ1/TVy7KrXy6xPgy3FEmOGyIYkBA2T4iGH3ZH5PNPPTmqN9jF2AfneTSOj0RtBr7Pxq3CUt81E/UCvK1A==}
-
-  '@module-federation/sdk@0.21.2':
-    resolution: {integrity: sha512-t2vHSJ1a9zjg7LLJoEghcytNLzeFCqOat5TbXTav5dgU0xXw82Cf0EfLrxiJL6uUpgbtyvUdqqa2DVAvMPjiiA==}
 
   '@module-federation/sdk@2.8.0':
     resolution: {integrity: sha512-yBP+9+0Z8nlvKEXAZS3AsQVy7bFbZf8eMivGk4q4ZdwG3TsLMlsPjb1dQb2i7gcAG6ux9y2LWLkj/0LVk74cnQ==}
@@ -1499,14 +1451,14 @@ packages:
   '@module-federation/third-party-dts-extractor@2.8.0':
     resolution: {integrity: sha512-nAMlr74OKIylkfRwlunOhytQbmsgb3gCqdXWnPQhG+ZtqWXGELLfMT4a1Q1ht3cS+sRpWj2SZRqK2M7GadI6tA==}
 
-  '@module-federation/webpack-bundler-runtime@0.21.2':
-    resolution: {integrity: sha512-06R/NDY6Uh5RBIaBOFwYWzJCf1dIiQd/DFHToBVhejUT3ZFG7GzHEPIIsAGqMzne/JSmVsvjlXiJu7UthQ6rFA==}
-
   '@module-federation/webpack-bundler-runtime@2.8.0':
     resolution: {integrity: sha512-82fDy9v+7qV5fiN8TKVhOdrxhmAZnUIX/IKivYX5ulCt8aoOzVFTiwm/P1GQUDD8z6dqR48xgJdZdf0548Mc9w==}
 
-  '@napi-rs/wasm-runtime@1.0.7':
-    resolution: {integrity: sha512-SeDnOO0Tk7Okiq6DbXmmBODgOAb9dp9gjlphokTUxmt8U3liIP1ZsozBahH69j/RJv+Rfs6IwUKHTgQYJ/HBAw==}
+  '@napi-rs/wasm-runtime@1.1.6':
+    resolution: {integrity: sha512-ZLv/JdUfkvOy9eCnnBaGfiO+XimbjebAeO+MRQqD/B+FR1tnRN0tpKSJHRbE8sFfS6aqsXZ67TQjfwfsxULVbg==}
+    peerDependencies:
+      '@emnapi/core': ^1.7.1
+      '@emnapi/runtime': ^1.7.1
 
   '@nodable/entities@3.1.0':
     resolution: {integrity: sha512-LsS/DjHr+uDM647Gru/cA8+J3a3HfhttwCKLyuoyN7yXTFCxKBtSgMQBvrW9yNPa2/zDRUNuGPaH5QUFoa4arQ==}
@@ -1576,10 +1528,6 @@ packages:
 
   '@react-native/babel-plugin-codegen@0.86.3':
     resolution: {integrity: sha512-O6Xza4JBGPIU8J7YbKTyBoYL4thpy8jMW/oaLDWdAyOwYHKIjK47pAL5HUEbOe2bWz2PEKjbYRF2ApkJv1ottQ==}
-    engines: {node: ^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0}
-
-  '@react-native/babel-preset@0.86.3':
-    resolution: {integrity: sha512-/eqs/Hy9RZRcjdcs4wj3Cqmxvtb3NM5g+Uuh1RIvsjynMO8PRsrVWWLWgBcZL/jYUo+ogXd2NFB0W8L5Bg89xw==}
     engines: {node: ^20.19.4 || ^22.13.0 || ^24.3.0 || >= 25.0.0}
 
   '@react-native/codegen@0.86.3':
@@ -1667,74 +1615,97 @@ packages:
   '@react-navigation/routers@7.6.4':
     resolution: {integrity: sha512-GI7eJm8/KsZUQaYcXvEExikKurRZRgEsSzyZ7faENfi65yqJBCXjDMwyN1pF6pNW1MoLH1ErDwDivFxY6BzD3w==}
 
-  '@rspack/binding-darwin-arm64@1.6.0':
-    resolution: {integrity: sha512-IrigOWnGvQgugsTZgf3dB5uko+y+lkNLYg/8w0DiobxkWhpLO97RAeR1w0ofIPXYVu3UWVf7dgHj3PjTqjC9Tw==}
+  '@rspack/binding-darwin-arm64@2.2.8':
+    resolution: {integrity: sha512-d6GuY/k7kJk7SOXmruIz0m+2fIXaLv2SnBHEYsbvBzE7ZO6QXq7fSABWFWNnSnNu+brYHA5Dr/skV81bXgTTCw==}
     cpu: [arm64]
     os: [darwin]
 
-  '@rspack/binding-darwin-x64@1.6.0':
-    resolution: {integrity: sha512-UYz+Y1XqbHGnkUOsaZRuwiuQaQaQ5rEPSboBPlIVDtblwmB71yxo3ET0nSoUhz8L/WXqQoARiraTCxUP6bvSIg==}
+  '@rspack/binding-darwin-x64@2.2.8':
+    resolution: {integrity: sha512-xCVou/jJASjEAjwy1T3hPJcJqA5QZASJfUwHqEk+nA0v44MagwH8tM8lsOvRfhzR7N2+YFac1rfZOUT8uM3awg==}
     cpu: [x64]
     os: [darwin]
 
-  '@rspack/binding-linux-arm64-gnu@1.6.0':
-    resolution: {integrity: sha512-Jr7aaxrtwOnh7ge7tZP+Mjpo6uNltvQisL25WcjpP+8PnPT0C9jziKDJso7KxeOINXnQ2yRn2h65+HBNb7FQig==}
+  '@rspack/binding-linux-arm64-gnu@2.2.8':
+    resolution: {integrity: sha512-Zy/ss6YAQTjOWKDkcWrbKtu+pySltqT22wn68nlrWKygPWLNmMdU5anlsnwRTIuQ3MF0YJRS42ARauVtlqvRQw==}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
 
-  '@rspack/binding-linux-arm64-musl@1.6.0':
-    resolution: {integrity: sha512-hl17reUhkjgkcLao6ZvNiSRQFGFykqUpIj1//v/XtVd/2XAZ0Kt7jv9UUeaR+2zY8piH+tgCkwgefmjmajMeFg==}
+  '@rspack/binding-linux-arm64-musl@2.2.8':
+    resolution: {integrity: sha512-lxgp5O8PhL3St9p82llHoNoeWzp9jltW5S9F00p00XPJZHUIuxbwfLSzn/6Wg86USEmafLoBkyD9CM8rBd3SNQ==}
     cpu: [arm64]
     os: [linux]
     libc: [musl]
 
-  '@rspack/binding-linux-x64-gnu@1.6.0':
-    resolution: {integrity: sha512-xdlb+ToerFU/YggndCfIrZI/S/C80CP9ZFw6lhnEFSTJDAG88KptxstsoKUh8YzyPTD45CYaOjYNtUtiv0nScg==}
+  '@rspack/binding-linux-ppc64-gnu@2.2.8':
+    resolution: {integrity: sha512-MY+YqpT02tcDCMgHy+IewQsaz7ql4mbJaAqqMlTIqvQwAUl9dXEP7BL352OgCxm9VRebTldE5lK99A3wVd3zqA==}
+    cpu: [ppc64]
+    os: [linux]
+    libc: [glibc]
+
+  '@rspack/binding-linux-riscv64-gnu@2.2.8':
+    resolution: {integrity: sha512-wmN9OigSGNGCKY+AOYaWI8LJcIi8qvs5KjueBueCKOnTV6MPIEujA75QZH1pehTTYKvdGv7r2EtUXUmWpn7/SQ==}
+    cpu: [riscv64]
+    os: [linux]
+    libc: [glibc]
+
+  '@rspack/binding-linux-riscv64-musl@2.2.8':
+    resolution: {integrity: sha512-ZcQMYR10hLh581zs9MFnFFn0F7wyt5fkDffyukeMHJEoPJrbkfl6cQtsUdpQnZ+mYGYS5KydD1DT9/eMH65jjw==}
+    cpu: [riscv64]
+    os: [linux]
+    libc: [musl]
+
+  '@rspack/binding-linux-s390x-gnu@2.2.8':
+    resolution: {integrity: sha512-ahBiE+Ir1FMYvStYicihhSJlS2YRagxtry0jWH8zW287o7C0eiHJ+pteJHHC15T5RJqm0j6w5TuwYe+F9AYxxg==}
+    cpu: [s390x]
+    os: [linux]
+    libc: [glibc]
+
+  '@rspack/binding-linux-x64-gnu@2.2.8':
+    resolution: {integrity: sha512-dncEI515NoPXh3zzWk06Rb3mhSV76myiFKqXiJ8K4fVAe5x/RlweMhvPhHhm7RnIMeBld7BeStzOqj38XFsWGA==}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
 
-  '@rspack/binding-linux-x64-musl@1.6.0':
-    resolution: {integrity: sha512-IkXEW/FBPPz4EJJTLNZvA+94aLaW2HgUMYu7zCIw5YMc9JJ/UXexY1zjX/A7yidsCiZCRy/ZrB+veFJ5FkZv7w==}
+  '@rspack/binding-linux-x64-musl@2.2.8':
+    resolution: {integrity: sha512-pfFyU03PjD0GaQG8zOQOHwq51rrJZetXjTGpMmz7iA1hq/f9lChJsDWrC8/7VXeQLwBofLZlOODqe8OM8OBzgA==}
     cpu: [x64]
     os: [linux]
     libc: [musl]
 
-  '@rspack/binding-wasm32-wasi@1.6.0':
-    resolution: {integrity: sha512-XGwX35XXnoTYVUGwDBsKNOkkk/yUsT/RF59u9BwT3QBM5eSXk767xVw/ZeiiyJf5YfI/52HDW2E4QZyvlYyv7g==}
+  '@rspack/binding-wasm32-wasi@2.2.8':
+    resolution: {integrity: sha512-3mOJuZTrF56jOh/GD9chLMJKbzPZ6Ty2OIML7+lLz0Yk2XS/xWRfLn85Dmnkb/O6UF65x7+p8VPAIZlBtLTclw==}
     cpu: [wasm32]
 
-  '@rspack/binding-win32-arm64-msvc@1.6.0':
-    resolution: {integrity: sha512-HOA/U7YC6EB74CpIrT2GrvPgd+TLr0anNuOp/8omw9hH1jjsP5cjUMgWeAGmWyXWxwoS8rRJ0xhRA+UIe3cL3g==}
+  '@rspack/binding-win32-arm64-msvc@2.2.8':
+    resolution: {integrity: sha512-Cu/RMZT/16s+67xhl6X1pswetL3GLSQl+LnugKRh08Ul21A/tR7vxC4g4aih4u9k5SXCAngxFUt8zAjKnHIBqA==}
     cpu: [arm64]
     os: [win32]
 
-  '@rspack/binding-win32-ia32-msvc@1.6.0':
-    resolution: {integrity: sha512-ThczdltBOFcq+IrTflCE+8q0GvKoISt6pTupkuGnI1/bCnqhCxPP6kx8Z06fdJUFMhvBtpZa0gDJvhh3JBZrKA==}
+  '@rspack/binding-win32-ia32-msvc@2.2.8':
+    resolution: {integrity: sha512-H/erd6di8OapZhhM0raA/7XduPn9jusfLMeO1XF+AmF9WF3HzHgMjha1j+KwtPgQnaH69w6AhY+G2472VIwQmw==}
     cpu: [ia32]
     os: [win32]
 
-  '@rspack/binding-win32-x64-msvc@1.6.0':
-    resolution: {integrity: sha512-Bhyvsh1m6kIpr1vqZlcdUDUTh0bheRe9SF+f6jw0kPDPbh8FfrRbshPKmRHpRZAUHt20NqgUKR2z2BaKb0IJvQ==}
+  '@rspack/binding-win32-x64-msvc@2.2.8':
+    resolution: {integrity: sha512-BziHSUlIQM0MliCqdcHuBXSkQGtPoHQTXJce7fsgnTAzQFgPeog92qTNezYI4IrQ7pQouyiVJ2HPieUbVPRKQQ==}
     cpu: [x64]
     os: [win32]
 
-  '@rspack/binding@1.6.0':
-    resolution: {integrity: sha512-RqlCjvWg/LkJjHpsbI48ebo2SYpIBJsV1eh9SEMfXo1batAPvB5grhAbLX0MRUOtzuQOnZMCDGdr2v7l2L8Siw==}
+  '@rspack/binding@2.2.8':
+    resolution: {integrity: sha512-c9flkSua3khHnOKBCRk8BkHGOwU9YB7niv+5JfQXiLZIvJmgKsZ7PD8QrFklMhsJT3oVAc6c9GN7/wy1YkACjA==}
 
-  '@rspack/core@1.6.0':
-    resolution: {integrity: sha512-u2GDSToEhmgIsy0QbOPA81i9tu87J2HgSsRA3HHZfWIR8Vt8KdlAriQnG8CatDnvFSY/UQEumVf5Z1HUAQwxCg==}
-    engines: {node: '>=18.12.0'}
+  '@rspack/core@2.2.8':
+    resolution: {integrity: sha512-JugsVrnbMGNYzMH++7gR9enygpP/lAo9PbVRq3XmJg0ryIvCpST0XJjBcccaSjYaaPamsjrddihmgVLMFp+yXw==}
+    engines: {node: ^20.19.0 || >=22.12.0}
     peerDependencies:
-      '@swc/helpers': '>=0.5.1'
+      '@module-federation/runtime-tools': ^0.24.1 || ^2.0.0
+      '@swc/helpers': ^0.5.23
     peerDependenciesMeta:
+      '@module-federation/runtime-tools':
+        optional: true
       '@swc/helpers':
         optional: true
-
-  '@rspack/lite-tapable@1.0.1':
-    resolution: {integrity: sha512-VynGOEsVw2s8TAlLf/uESfrgfrq2+rcXB1muPJYBWbsm1Oa6r5qVQhjA5ggM6z/coYPrsVMgovl3Ff7Q7OCp1w==}
-    engines: {node: '>=16.0.0'}
 
   '@rspack/plugin-react-refresh@1.0.0':
     resolution: {integrity: sha512-WvXkLewW5G0Mlo5H1b251yDh5FFiH4NDAbYlFpvFjcuXX2AchZRf9zdw57BDE/ADyWsJgA8kixN/zZWBTN3iYA==}
@@ -4838,16 +4809,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@babel/plugin-transform-react-jsx-self@7.29.7(@babel/core@7.29.7)':
-    dependencies:
-      '@babel/core': 7.29.7
-      '@babel/helper-plugin-utils': 7.29.7
-
-  '@babel/plugin-transform-react-jsx-source@7.29.7(@babel/core@7.29.7)':
-    dependencies:
-      '@babel/core': 7.29.7
-      '@babel/helper-plugin-utils': 7.29.7
-
   '@babel/plugin-transform-react-jsx@7.29.7(@babel/core@7.29.7)':
     dependencies:
       '@babel/core': 7.29.7
@@ -4863,11 +4824,6 @@ snapshots:
     dependencies:
       '@babel/core': 7.29.7
       '@babel/helper-annotate-as-pure': 7.29.7
-      '@babel/helper-plugin-utils': 7.29.7
-
-  '@babel/plugin-transform-regenerator@7.29.8(@babel/core@7.29.7)':
-    dependencies:
-      '@babel/core': 7.29.7
       '@babel/helper-plugin-utils': 7.29.7
 
   '@babel/plugin-transform-runtime@7.29.7(@babel/core@7.29.7)':
@@ -4978,27 +4934,28 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  '@callstack/repack-expo@file:tarballs/callstack-repack-expo-0.0.0.tgz(@callstack/repack@file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@1.6.0)(typescript@6.0.3))(@rspack/core@1.6.0)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8)))(@rspack/core@1.6.0)(expo@57.0.26(@babel/core@7.29.7)(react-native-worklets@0.11.3(@babel/core@7.29.7)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8)(typescript@6.0.3))':
+  '@callstack/repack-expo@file:tarballs/callstack-repack-expo-0.0.0.tgz(@callstack/repack@file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(typescript@6.0.3))(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8)))(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(expo@57.0.26(@babel/core@7.29.7)(react-native-worklets@0.11.3(@babel/core@7.29.7)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8)(typescript@6.0.3))':
     dependencies:
-      '@callstack/repack': file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@1.6.0)(typescript@6.0.3))(@rspack/core@1.6.0)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))
-      '@callstack/repack-plugin-expo-modules': file:tarballs/callstack-repack-plugin-expo-modules-5.4.0.tgz(@callstack/repack@file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@1.6.0)(typescript@6.0.3))(@rspack/core@1.6.0)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8)))
+      '@callstack/repack': file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(typescript@6.0.3))(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))
+      '@callstack/repack-plugin-expo-modules': file:tarballs/callstack-repack-plugin-expo-modules-5.4.0.tgz(@callstack/repack@file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(typescript@6.0.3))(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8)))
       '@expo/env': 2.3.1
-      '@rspack/core': 1.6.0
+      '@rspack/core': 2.2.8(@module-federation/runtime-tools@2.8.0)
       expo: 57.0.26(@babel/core@7.29.7)(react-native-worklets@0.11.3(@babel/core@7.29.7)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))(react@19.2.8)(typescript@6.0.3)
+      hermes-parser: 0.36.1
     transitivePeerDependencies:
       - supports-color
 
-  '@callstack/repack-plugin-expo-modules@file:tarballs/callstack-repack-plugin-expo-modules-5.4.0.tgz(@callstack/repack@file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@1.6.0)(typescript@6.0.3))(@rspack/core@1.6.0)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8)))':
+  '@callstack/repack-plugin-expo-modules@file:tarballs/callstack-repack-plugin-expo-modules-5.4.0.tgz(@callstack/repack@file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(typescript@6.0.3))(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8)))':
     dependencies:
-      '@callstack/repack': file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@1.6.0)(typescript@6.0.3))(@rspack/core@1.6.0)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))
+      '@callstack/repack': file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(typescript@6.0.3))(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))
 
-  '@callstack/repack-plugin-reanimated@file:tarballs/callstack-repack-plugin-reanimated-5.4.0.tgz(@babel/core@7.29.7)(@callstack/repack@file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@1.6.0)(typescript@6.0.3))(@rspack/core@1.6.0)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8)))':
+  '@callstack/repack-plugin-reanimated@file:tarballs/callstack-repack-plugin-reanimated-5.4.0.tgz(@babel/core@7.29.7)(@callstack/repack@file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(typescript@6.0.3))(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8)))':
     dependencies:
       '@babel/core': 7.29.7
-      '@callstack/repack': file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@1.6.0)(typescript@6.0.3))(@rspack/core@1.6.0)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))
+      '@callstack/repack': file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(typescript@6.0.3))(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))
       semver: 7.8.5
 
-  '@callstack/repack@file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@1.6.0)(typescript@6.0.3))(@rspack/core@1.6.0)(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))':
+  '@callstack/repack@file:tarballs/callstack-repack-5.4.0.tgz(@babel/core@7.29.7)(@module-federation/enhanced@2.8.0(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(typescript@6.0.3))(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(react-native@0.86.3(@react-native-community/cli@20.2.0(typescript@6.0.3))(@types/react@19.2.18)(react@19.2.8))':
     dependencies:
       '@callstack/repack-dev-server': file:tarballs/callstack-repack-dev-server-5.4.0.tgz
       '@discoveryjs/json-ext': 0.5.7
@@ -5027,8 +4984,8 @@ snapshots:
       throttleit: 2.1.0
       webpack-merge: 6.0.1
     optionalDependencies:
-      '@module-federation/enhanced': 2.8.0(@rspack/core@1.6.0)(typescript@6.0.3)
-      '@rspack/core': 1.6.0
+      '@module-federation/enhanced': 2.8.0(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(typescript@6.0.3)
+      '@rspack/core': 2.2.8(@module-federation/runtime-tools@2.8.0)
     transitivePeerDependencies:
       - '@babel/core'
       - '@swc/core'
@@ -5703,7 +5660,7 @@ snapshots:
       - bufferutil
       - utf-8-validate
 
-  '@module-federation/enhanced@2.8.0(@rspack/core@1.6.0)(typescript@6.0.3)':
+  '@module-federation/enhanced@2.8.0(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(typescript@6.0.3)':
     dependencies:
       '@module-federation/bridge-react-webpack-plugin': 2.8.0
       '@module-federation/cli': 2.8.0(typescript@6.0.3)
@@ -5712,7 +5669,7 @@ snapshots:
       '@module-federation/inject-external-runtime-core-plugin': 2.8.0(@module-federation/runtime-tools@2.8.0)
       '@module-federation/managers': 2.8.0
       '@module-federation/manifest': 2.8.0(typescript@6.0.3)
-      '@module-federation/rspack': 2.8.0(@rspack/core@1.6.0)(typescript@6.0.3)
+      '@module-federation/rspack': 2.8.0(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(typescript@6.0.3)
       '@module-federation/runtime-tools': 2.8.0
       '@module-federation/sdk': 2.8.0
       '@module-federation/webpack-bundler-runtime': 2.8.0
@@ -5724,8 +5681,6 @@ snapshots:
       - '@rspack/core'
       - bufferutil
       - utf-8-validate
-
-  '@module-federation/error-codes@0.21.2': {}
 
   '@module-federation/error-codes@2.8.0': {}
 
@@ -5748,7 +5703,7 @@ snapshots:
       - utf-8-validate
       - vue-tsc
 
-  '@module-federation/rspack@2.8.0(@rspack/core@1.6.0)(typescript@6.0.3)':
+  '@module-federation/rspack@2.8.0(@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0))(typescript@6.0.3)':
     dependencies:
       '@module-federation/bridge-react-webpack-plugin': 2.8.0
       '@module-federation/dts-plugin': 2.8.0(typescript@6.0.3)
@@ -5757,38 +5712,22 @@ snapshots:
       '@module-federation/manifest': 2.8.0(typescript@6.0.3)
       '@module-federation/runtime-tools': 2.8.0
       '@module-federation/sdk': 2.8.0
-      '@rspack/core': 1.6.0
+      '@rspack/core': 2.2.8(@module-federation/runtime-tools@2.8.0)
     optionalDependencies:
       typescript: 6.0.3
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
 
-  '@module-federation/runtime-core@0.21.2':
-    dependencies:
-      '@module-federation/error-codes': 0.21.2
-      '@module-federation/sdk': 0.21.2
-
   '@module-federation/runtime-core@2.8.0':
     dependencies:
       '@module-federation/error-codes': 2.8.0
       '@module-federation/sdk': 2.8.0
 
-  '@module-federation/runtime-tools@0.21.2':
-    dependencies:
-      '@module-federation/runtime': 0.21.2
-      '@module-federation/webpack-bundler-runtime': 0.21.2
-
   '@module-federation/runtime-tools@2.8.0':
     dependencies:
       '@module-federation/runtime': 2.8.0
       '@module-federation/webpack-bundler-runtime': 2.8.0
-
-  '@module-federation/runtime@0.21.2':
-    dependencies:
-      '@module-federation/error-codes': 0.21.2
-      '@module-federation/runtime-core': 0.21.2
-      '@module-federation/sdk': 0.21.2
 
   '@module-federation/runtime@2.8.0':
     dependencies:
@@ -5796,16 +5735,9 @@ snapshots:
       '@module-federation/runtime-core': 2.8.0
       '@module-federation/sdk': 2.8.0
 
-  '@module-federation/sdk@0.21.2': {}
-
   '@module-federation/sdk@2.8.0': {}
 
   '@module-federation/third-party-dts-extractor@2.8.0': {}
-
-  '@module-federation/webpack-bundler-runtime@0.21.2':
-    dependencies:
-      '@module-federation/runtime': 0.21.2
-      '@module-federation/sdk': 0.21.2
 
   '@module-federation/webpack-bundler-runtime@2.8.0':
     dependencies:
@@ -5813,7 +5745,7 @@ snapshots:
       '@module-federation/runtime': 2.8.0
       '@module-federation/sdk': 2.8.0
 
-  '@napi-rs/wasm-runtime@1.0.7':
+  '@napi-rs/wasm-runtime@1.1.6(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)':
     dependencies:
       '@emnapi/core': 1.11.3
       '@emnapi/runtime': 1.11.3
@@ -5980,44 +5912,6 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@react-native/babel-preset@0.86.3':
-    dependencies:
-      '@babel/core': 7.29.7
-      '@babel/plugin-proposal-export-default-from': 7.29.7(@babel/core@7.29.7)
-      '@babel/plugin-syntax-dynamic-import': 7.8.3(@babel/core@7.29.7)
-      '@babel/plugin-syntax-export-default-from': 7.29.7(@babel/core@7.29.7)
-      '@babel/plugin-syntax-nullish-coalescing-operator': 7.8.3(@babel/core@7.29.7)
-      '@babel/plugin-syntax-optional-chaining': 7.8.3(@babel/core@7.29.7)
-      '@babel/plugin-transform-async-generator-functions': 7.29.7(@babel/core@7.29.7)
-      '@babel/plugin-transform-async-to-generator': 7.29.7(@babel/core@7.29.7)
-      '@babel/plugin-transform-block-scoping': 7.29.7(@babel/core@7.29.7)
-      '@babel/plugin-transform-class-properties': 7.29.7(@babel/core@7.29.7)
-      '@babel/plugin-transform-classes': 7.29.7(@babel/core@7.29.7)
-      '@babel/plugin-transform-destructuring': 7.29.7(@babel/core@7.29.7)
-      '@babel/plugin-transform-flow-strip-types': 7.29.7(@babel/core@7.29.7)
-      '@babel/plugin-transform-for-of': 7.29.7(@babel/core@7.29.7)
-      '@babel/plugin-transform-modules-commonjs': 7.29.7(@babel/core@7.29.7)
-      '@babel/plugin-transform-named-capturing-groups-regex': 7.29.7(@babel/core@7.29.7)
-      '@babel/plugin-transform-nullish-coalescing-operator': 7.29.7(@babel/core@7.29.7)
-      '@babel/plugin-transform-optional-catch-binding': 7.29.7(@babel/core@7.29.7)
-      '@babel/plugin-transform-optional-chaining': 7.29.7(@babel/core@7.29.7)
-      '@babel/plugin-transform-private-methods': 7.29.7(@babel/core@7.29.7)
-      '@babel/plugin-transform-private-property-in-object': 7.29.7(@babel/core@7.29.7)
-      '@babel/plugin-transform-react-display-name': 7.29.7(@babel/core@7.29.7)
-      '@babel/plugin-transform-react-jsx': 7.29.7(@babel/core@7.29.7)
-      '@babel/plugin-transform-react-jsx-self': 7.29.7(@babel/core@7.29.7)
-      '@babel/plugin-transform-react-jsx-source': 7.29.7(@babel/core@7.29.7)
-      '@babel/plugin-transform-regenerator': 7.29.8(@babel/core@7.29.7)
-      '@babel/plugin-transform-runtime': 7.29.7(@babel/core@7.29.7)
-      '@babel/plugin-transform-typescript': 7.29.9(@babel/core@7.29.7)
-      '@babel/plugin-transform-unicode-regex': 7.29.7(@babel/core@7.29.7)
-      '@react-native/babel-plugin-codegen': 0.86.3
-      babel-plugin-syntax-hermes-parser: 0.36.0
-      babel-plugin-transform-flow-enums: 0.0.2(@babel/core@7.29.7)
-      react-refresh: 0.14.2
-    transitivePeerDependencies:
-      - supports-color
-
   '@react-native/codegen@0.86.3':
     dependencies:
       '@babel/core': 7.29.7
@@ -6139,58 +6033,74 @@ snapshots:
     dependencies:
       nanoid: 3.3.19
 
-  '@rspack/binding-darwin-arm64@1.6.0':
+  '@rspack/binding-darwin-arm64@2.2.8':
     optional: true
 
-  '@rspack/binding-darwin-x64@1.6.0':
+  '@rspack/binding-darwin-x64@2.2.8':
     optional: true
 
-  '@rspack/binding-linux-arm64-gnu@1.6.0':
+  '@rspack/binding-linux-arm64-gnu@2.2.8':
     optional: true
 
-  '@rspack/binding-linux-arm64-musl@1.6.0':
+  '@rspack/binding-linux-arm64-musl@2.2.8':
     optional: true
 
-  '@rspack/binding-linux-x64-gnu@1.6.0':
+  '@rspack/binding-linux-ppc64-gnu@2.2.8':
     optional: true
 
-  '@rspack/binding-linux-x64-musl@1.6.0':
+  '@rspack/binding-linux-riscv64-gnu@2.2.8':
     optional: true
 
-  '@rspack/binding-wasm32-wasi@1.6.0':
+  '@rspack/binding-linux-riscv64-musl@2.2.8':
+    optional: true
+
+  '@rspack/binding-linux-s390x-gnu@2.2.8':
+    optional: true
+
+  '@rspack/binding-linux-x64-gnu@2.2.8':
+    optional: true
+
+  '@rspack/binding-linux-x64-musl@2.2.8':
+    optional: true
+
+  '@rspack/binding-wasm32-wasi@2.2.8':
     dependencies:
-      '@napi-rs/wasm-runtime': 1.0.7
+      '@emnapi/core': 1.11.3
+      '@emnapi/runtime': 1.11.3
+      '@napi-rs/wasm-runtime': 1.1.6(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)
     optional: true
 
-  '@rspack/binding-win32-arm64-msvc@1.6.0':
+  '@rspack/binding-win32-arm64-msvc@2.2.8':
     optional: true
 
-  '@rspack/binding-win32-ia32-msvc@1.6.0':
+  '@rspack/binding-win32-ia32-msvc@2.2.8':
     optional: true
 
-  '@rspack/binding-win32-x64-msvc@1.6.0':
+  '@rspack/binding-win32-x64-msvc@2.2.8':
     optional: true
 
-  '@rspack/binding@1.6.0':
+  '@rspack/binding@2.2.8':
     optionalDependencies:
-      '@rspack/binding-darwin-arm64': 1.6.0
-      '@rspack/binding-darwin-x64': 1.6.0
-      '@rspack/binding-linux-arm64-gnu': 1.6.0
-      '@rspack/binding-linux-arm64-musl': 1.6.0
-      '@rspack/binding-linux-x64-gnu': 1.6.0
-      '@rspack/binding-linux-x64-musl': 1.6.0
-      '@rspack/binding-wasm32-wasi': 1.6.0
-      '@rspack/binding-win32-arm64-msvc': 1.6.0
-      '@rspack/binding-win32-ia32-msvc': 1.6.0
-      '@rspack/binding-win32-x64-msvc': 1.6.0
+      '@rspack/binding-darwin-arm64': 2.2.8
+      '@rspack/binding-darwin-x64': 2.2.8
+      '@rspack/binding-linux-arm64-gnu': 2.2.8
+      '@rspack/binding-linux-arm64-musl': 2.2.8
+      '@rspack/binding-linux-ppc64-gnu': 2.2.8
+      '@rspack/binding-linux-riscv64-gnu': 2.2.8
+      '@rspack/binding-linux-riscv64-musl': 2.2.8
+      '@rspack/binding-linux-s390x-gnu': 2.2.8
+      '@rspack/binding-linux-x64-gnu': 2.2.8
+      '@rspack/binding-linux-x64-musl': 2.2.8
+      '@rspack/binding-wasm32-wasi': 2.2.8
+      '@rspack/binding-win32-arm64-msvc': 2.2.8
+      '@rspack/binding-win32-ia32-msvc': 2.2.8
+      '@rspack/binding-win32-x64-msvc': 2.2.8
 
-  '@rspack/core@1.6.0':
+  '@rspack/core@2.2.8(@module-federation/runtime-tools@2.8.0)':
     dependencies:
-      '@module-federation/runtime-tools': 0.21.2
-      '@rspack/binding': 1.6.0
-      '@rspack/lite-tapable': 1.0.1
-
-  '@rspack/lite-tapable@1.0.1': {}
+      '@rspack/binding': 2.2.8
+    optionalDependencies:
+      '@module-federation/runtime-tools': 2.8.0
 
   '@rspack/plugin-react-refresh@1.0.0(react-refresh@0.14.2)':
     dependencies:
