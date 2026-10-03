@@ -1,0 +1,17 @@
+{
+  "name": "repack-expo-super-app",
+  "private": true,
+  "packageManager": "pnpm@10.34.5",
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "start": "mprocs -c mprocs.yaml",
+    "ios": "pnpm --filter host repack:ios",
+    "android": "pnpm --filter host repack:android",
+    "typecheck": "pnpm -r typecheck"
+  },
+  "devDependencies": {
+    "mprocs": "^0.9.6"
+  }
+}

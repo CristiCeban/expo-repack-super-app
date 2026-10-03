@@ -1,0 +1,13 @@
+procs:
+  host:
+    cmd: ["pnpm", "--filter", "host", "repack:start"]
+    stop: SIGKILL
+  auth:
+    cmd: ["pnpm", "--filter", "auth", "start"]
+    stop: SIGKILL
+  trading:
+    cmd: ["pnpm", "--filter", "trading", "start"]
+    stop: SIGKILL
+  wallet:
+    cmd: ["pnpm", "--filter", "wallet", "start"]
+    stop: SIGKILL

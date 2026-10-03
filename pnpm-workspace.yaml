@@ -1,0 +1,57 @@
+packages:
+  - "packages/*"
+
+autoInstallPeers: false
+
+# Re.Pack and the Expo integration come from local tarballs packed from the
+# callstack/repack PR #1425 branch (@callstack/repack-expo is unpublished).
+overrides:
+  "@callstack/repack": "file:./tarballs/callstack-repack-5.4.0.tgz"
+  "@callstack/repack-dev-server": "file:./tarballs/callstack-repack-dev-server-5.4.0.tgz"
+  "@callstack/repack-expo": "file:./tarballs/callstack-repack-expo-0.0.0.tgz"
+  "@callstack/repack-plugin-expo-modules": "file:./tarballs/callstack-repack-plugin-expo-modules-5.4.0.tgz"
+  "@callstack/repack-plugin-reanimated": "file:./tarballs/callstack-repack-plugin-reanimated-5.4.0.tgz"
+  "super-app-showcase-sdk": "workspace:*"
+
+allowBuilds:
+  "@shopify/react-native-skia": true
+
+# One version per library across host and mini apps. Libraries shared with the
+# Re.Pack tester apps use the set validated there; Expo-only packages follow
+# Expo SDK 57.0.26.
+catalog:
+  "expo": ~57.0.26
+  "expo-asset": ~57.0.18
+  "expo-constants": ~57.0.20
+  "expo-font": ~57.0.4
+  "expo-splash-screen": ~57.0.9
+  "expo-status-bar": ~57.0.1
+  "expo-system-ui": ~57.0.4
+  "@expo/vector-icons": ^15.0.2
+  "babel-preset-expo": ~57.0.13
+  "react": 19.2.8
+  "react-native": 0.86.3
+  "@types/react": ~19.2.2
+  "typescript": ~6.0.3
+  "@rspack/core": 1.6.0
+  "@callstack/repack": 5.4.0
+  "@callstack/repack-expo": 0.0.0
+  "@callstack/repack-plugin-reanimated": 5.4.0
+  "@react-native-community/cli": 20.2.0
+  "@react-native/babel-preset": 0.86.3
+  "@module-federation/enhanced": 2.8.0
+  "@react-navigation/native": 7.5.0
+  "@react-navigation/native-stack": 7.20.0
+  "@bottom-tabs/react-navigation": 1.4.0
+  "react-native-bottom-tabs": 1.4.0
+  "react-native-screens": 4.26.2
+  "react-native-safe-area-context": 5.8.0
+  "react-native-gesture-handler": ~2.32.0
+  "react-native-reanimated": 4.5.3
+  "react-native-worklets": 0.11.3
+  "@shopify/react-native-skia": 2.6.2
+  "victory-native": 42.0.1
+  "@gorhom/bottom-sheet": 5.2.14
+  "@legendapp/list": 3.4.0
+  "react-native-paper": 5.15.3
+  "@react-native-async-storage/async-storage": 3.1.1

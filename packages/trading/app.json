@@ -1,0 +1,13 @@
+{
+  "expo": {
+    "name": "trading",
+    "slug": "super-app-trading",
+    "version": "1.0.0",
+    "updates": {
+      "enabled": false
+    },
+    "plugins": [
+      "@callstack/repack-expo"
+    ]
+  }
+}

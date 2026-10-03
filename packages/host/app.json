@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "Super App Showcase",
+    "slug": "super-app-showcase-expo",
+    "scheme": "superappshowcase",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0A0E1A",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.callstack.superappshowcase.expo"
+    },
+    "android": {
+      "package": "com.callstack.superappshowcase.expo",
+      "adaptiveIcon": {
+        "backgroundColor": "#0A0E1A",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      "@callstack/repack-expo",
+      "react-native-bottom-tabs",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash/logo.png",
+          "imageWidth": 100,
+          "backgroundColor": "#ffffff"
+        }
+      ]
+    ],
+    "updates": {
+      "enabled": false
+    }
+  }
+}
