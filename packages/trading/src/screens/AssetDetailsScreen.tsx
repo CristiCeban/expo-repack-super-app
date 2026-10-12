@@ -147,7 +147,11 @@ const AssetDetailsScreen = ({route, navigation}: Props) => {
 
   const chartFont = React.useMemo(() => {
     try {
-      return matchFont({fontSize: 11});
+      // Skia's default "System" family only resolves on iOS.
+      return matchFont({
+        fontFamily: Platform.select({ios: 'System', default: 'sans-serif'}),
+        fontSize: 11,
+      });
     } catch {
       return null;
     }
