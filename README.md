@@ -1,8 +1,9 @@
 # Super App Showcase on Expo + Re.Pack
 
 An Expo version of [callstack/super-app-showcase](https://github.com/callstack/super-app-showcase),
-built with Re.Pack (Rspack) through the `@callstack/repack-expo` integration
-from [callstack/repack#1425](https://github.com/callstack/repack/pull/1425).
+built with Re.Pack (Rspack) through the
+[`@callstack/repack-expo`](https://www.npmjs.com/package/@callstack/repack-expo)
+integration.
 
 ## Packages
 
@@ -56,14 +57,3 @@ for p in 8081 9001 9002 9003; do adb reverse tcp:$p tcp:$p; done
 - Not ported: React Compiler, code signing of the auth remote, Jest tests,
   rnx-kit align-deps.
 
-## Integration issues found with this app
-
-Building this app surfaced two bugs in `@callstack/repack-expo`, both fixed
-before the 0.0.1 release:
-
-- Every module failed with "Failed to import 'hermes-parser'" because Re.Pack
-  looked for hermes-parser through `@react-native/babel-preset`, which Expo
-  apps don't install.
-- React Navigation and AsyncStorage failed with "Module not found" for their
-  extensionless imports, because `ExpoPlugin` keeps ES modules and Rspack
-  enforced fully-specified ESM resolution in `"type": "module"` packages.
